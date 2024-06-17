@@ -6,7 +6,7 @@ export default function Home() {
         <img
           src="/kaloka.jpg"
           alt="Kaloka Radia Nanda"
-          className="mx-auto mb-10 w-[250px] rounded-[100%] border-4 border-teal-500 shadow-lg"
+          className="mx-auto mb-10 w-[250px] rounded-[100%] border-4 border-teal-500 shadow-lg dark:border-teal-700"
         />
         <h1 className="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 dark:text-white md:text-5xl lg:text-6xl">
           Hello, I&apos;am <span className="block">Kaloka Radia Nanda</span>
