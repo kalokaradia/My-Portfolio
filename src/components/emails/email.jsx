@@ -1,14 +1,16 @@
-export default function Email() {
+export default function Email({ url }) {
 	return (
-		<button
-			href="https://example.com"
-			style={{
-				background: "#000",
-				color: "#fff",
-				padding: "12px 20px",
-			}}
-		>
-			Click me
-		</button>
+		<section>
+			<button
+				href="https://example.com"
+				style={{
+					background: "#000",
+					color: "#fff",
+					padding: "12px 20px",
+				}}
+			>
+				Pergi ke halaman
+			</button>
+		</section>
 	);
 }

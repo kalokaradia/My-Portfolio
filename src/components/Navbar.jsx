@@ -8,7 +8,7 @@ function NavigationMenu({ idNav, textNav }) {
 		<li>
 			<a
 				href={idNav}
-				className="block px-3 py-2 text-gray-900 rounded hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-teal-700 md:dark:hover:bg-transparent md:dark:hover:text-teal-500"
+				className="block px-3 py-2 text-gray-900 rounded hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:border-0 lg:p-0 lg:hover:bg-transparent lg:hover:text-teal-700 lg:dark:hover:bg-transparent lg:dark:hover:text-teal-500"
 			>
 				{textNav}
 			</a>
@@ -51,7 +51,7 @@ export default function Navbar() {
 				<button
 					onClick={toggleMenu}
 					type="button"
-					className="inline-flex items-center justify-center w-10 h-10 p-2 text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 md:hidden"
+					className="inline-flex items-center justify-center w-10 h-10 p-2 text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 lg:hidden"
 					aria-controls="navbar-solid-bg"
 					aria-expanded={isMenuOpen}
 				>
@@ -75,10 +75,10 @@ export default function Navbar() {
 				<div
 					className={`${
 						isMenuOpen ? "block" : "hidden"
-					} w-full md:block md:w-auto`}
+					} w-full lg:block lg:w-auto`}
 					id="navbar-solid-bg"
 				>
-					<ul className="flex flex-col mt-4 font-medium rounded-lg bg-gray-50 dark:border-gray-700 dark:bg-gray-800 md:mt-0 md:flex-row md:space-x-8 md:border-0 md:bg-transparent md:dark:bg-transparent rtl:space-x-reverse font-comfortaa">
+					<ul className="flex flex-col mt-4 font-medium rounded-lg bg-gray-50 dark:border-gray-700 dark:bg-gray-800 lg:mt-0 lg:flex-row lg:space-x-8 lg:border-0 lg:bg-transparent lg:dark:bg-transparent rtl:space-x-reverse font-comfortaa">
 						<NavigationMenu idNav="#home" textNav="Home" />
 						<NavigationMenu idNav="#about" textNav="About" />
 						<NavigationMenu idNav="#project" textNav="Project" />
@@ -91,7 +91,7 @@ export default function Navbar() {
 						<NavigationMenu idNav="#contact" textNav="Contact" />
 						<li
 							onClick={toggleDarkMode}
-							className="py-4 ml-3 cursor-pointer sm:ml-0 sm:py-0"
+							className="py-4 ml-3 cursor-pointer lg:ml-0 lg:py-0"
 						>
 							{darkMode ? (
 								<svg
