@@ -6,22 +6,26 @@ export const About = () => {
                     About Me
                 </h1>
                 <p className="mx-auto mb-8 max-w-5xl text-lg text-gray-500 dark:text-gray-400 sm:px-16 lg:px-48 lg:text-xl">
-                    Hai, saya Kaloka Radia Nanda, seorang siswa SMP yang
-                    tertarik pada dunia pengembangan website. Saya senang
-                    menghabiskan waktu untuk mencari beberapa ide-ide baru.
-                    Dengan keterampilan yang saya miliki, saya berkomitmen untuk
-                    memberikan kontribusi yang berarti dalam setiap proyek.
+                    Hai! Nama saya Kaloka Radia Nanda, dan saya siswa SMP kelas
+                    1. Saya punya hobi yang mungkin sedikit berbeda dari
+                    teman-teman lain, yaitu coding. Sejak pertama kali kenal
+                    komputer, saya langsung suka banget sama dunia pemrograman.
+                    Menulis kode dan melihatnya bekerja itu rasanya seru banget!
                 </p>
                 <p className="mx-auto mb-8 max-w-5xl text-lg text-gray-500 dark:text-gray-400 sm:px-16 lg:px-48 lg:text-xl">
-                    Saya terampil dalam pembuatan website entah dalam bidang
-                    Front End ataupun Back End. Saya juga adalah seorang Solo
-                    Programmer atau Independent Programmer untuk saat ini. Saya
-                    juga cukup terampil dalam bahasa pemrograman python.
+                    Saya suka menghabiskan waktu luang dengan belajar bahasa
+                    pemrograman baru dan membuat proyek-proyek kecil yang keren.
+                    Mulai dari bikin game sederhana, aplikasi kecil, sampai
+                    coba-coba bikin situs web. Buat saya, coding bukan cuma
+                    hobi, tapi juga cara untuk berkreativitas dan
+                    bersenang-senang.
                 </p>
                 <p className="mx-auto mb-8 max-w-5xl text-lg text-gray-500 dark:text-gray-400 sm:px-16 lg:px-48 lg:text-xl">
-                    Untuk saat ini saya perlu meningkatkan kemampuan saya dalam
-                    membuat website ataupu proyek lain. Saya juga perlu membuat
-                    ide-ide segar untuk proyek saya kedepannya.
+                    Lewat website ini, saya ingin berbagi cerita tentang
+                    perjalanan saya di dunia coding dan proyek-proyek yang sudah
+                    saya buat. Semoga bisa menginspirasi teman-teman untuk
+                    mencoba hal baru dan mengejar apa yang mereka sukai. Terima
+                    kasih sudah berkunjung, semoga suka!
                 </p>
             </div>
         </section>
