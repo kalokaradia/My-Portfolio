@@ -1,17 +1,16 @@
-/* eslint-disable @next/next/no-img-element */
-/* eslint-disable react/jsx-no-undef */
 "use client";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 
 function NavigationMenu({ idNav, textNav }) {
   return (
     <li>
-      <a
+      <Link
         href={idNav}
         className="block rounded px-3 py-2 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:border-0 lg:p-0 lg:hover:bg-transparent lg:hover:text-teal-700 lg:dark:hover:bg-transparent lg:dark:hover:text-teal-500"
       >
         {textNav}
-      </a>
+      </Link>
     </li>
   );
 }
@@ -39,12 +38,15 @@ export default function Navbar() {
   return (
     <nav className="fixed z-[999] w-full border-white bg-white shadow-md dark:border-gray-700 dark:bg-gray-800">
       <div className="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between p-4">
-        <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
+        <Link
+          href="/"
+          className="flex items-center space-x-3 rtl:space-x-reverse"
+        >
           <img src="/logo.ico" className="h-8" alt="Logo" />
           <span className="self-center whitespace-nowrap text-2xl font-semibold dark:text-white">
             K R N
           </span>
-        </a>
+        </Link>
         <button
           onClick={toggleMenu}
           type="button"
@@ -76,14 +78,14 @@ export default function Navbar() {
           id="navbar-solid-bg"
         >
           <ul className="mt-4 flex flex-col rounded-lg bg-gray-50 font-comfortaa font-medium dark:border-gray-700 dark:bg-gray-800 lg:mt-0 lg:flex-row lg:space-x-8 lg:border-0 lg:bg-transparent lg:dark:bg-transparent rtl:space-x-reverse">
-            <NavigationMenu idNav="#home" textNav="Home" />
-            <NavigationMenu idNav="#about" textNav="About" />
-            <NavigationMenu idNav="#project" textNav="Project" />
-            <NavigationMenu idNav="#blog" textNav="Blog" />
-            <NavigationMenu idNav="#skill" textNav="Skill" />
-            <NavigationMenu idNav="#experience" textNav="Experience" />
-            <NavigationMenu idNav="#gallery" textNav="Gallery" />
-            <NavigationMenu idNav="#contact" textNav="Contact" />
+            <NavigationMenu idNav="/#home" textNav="Home" />
+            <NavigationMenu idNav="/#about" textNav="About" />
+            <NavigationMenu idNav="/#project" textNav="Project" />
+            <NavigationMenu idNav="/#blog" textNav="Blog" />
+            <NavigationMenu idNav="/#skill" textNav="Skill" />
+            <NavigationMenu idNav="/#experience" textNav="Experience" />
+            <NavigationMenu idNav="/#gallery" textNav="Gallery" />
+            <NavigationMenu idNav="/#contact" textNav="Contact" />
             <li
               onClick={toggleDarkMode}
               className="ml-3 cursor-pointer py-4 lg:ml-0 lg:py-0"

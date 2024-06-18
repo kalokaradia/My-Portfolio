@@ -1,4 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
+import Link from "next/link";
+
 export default function Home() {
   return (
     <section className="bg-white pt-20 dark:bg-gray-900" id="home">
@@ -15,7 +17,7 @@ export default function Home() {
           I&apos;am a Student and Programmer
         </p>
         <div className="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0">
-          <a
+          <Link
             href="#about"
             className="inline-flex items-center justify-center rounded-lg bg-teal-700 px-5 py-3 text-center text-base font-medium text-white hover:bg-teal-800 focus:ring-4 focus:ring-teal-300 dark:focus:ring-teal-900"
           >
@@ -35,13 +37,13 @@ export default function Home() {
                 d="M1 5h12m0 0L9 1m4 4L9 9"
               />
             </svg>
-          </a>
-          <a
+          </Link>
+          <Link
             href="#contact"
             className="dark:hover:bg-gray-70 rounded-lg border border-gray-200 bg-white px-5 py-3 text-sm font-medium text-gray-900 hover:bg-gray-100 hover:text-teal-700 focus:z-10 focus:outline-none focus:ring-4 focus:ring-gray-100 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-400 dark:hover:text-white dark:focus:ring-gray-700 sm:ms-4"
           >
             Contact Me
-          </a>
+          </Link>
         </div>
       </div>
     </section>
