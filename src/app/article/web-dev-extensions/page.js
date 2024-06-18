@@ -1,8 +1,10 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import ArticleText from "@/components/ArticleText";
-import ArticleTitle from "@/components/ArticleTitle";
-import ArticleList from "@/components/ArticleList";
+import { ArticleText } from "@/components/ArticleComponents";
+import { ArticleTitle } from "@/components/ArticleComponents";
+import { ArticleList } from "@/components/ArticleComponents";
+import { ArticleDate } from "@/components/ArticleComponents";
+import { ArticleBy } from "@/components/ArticleComponents";
 import Link from "next/link";
 
 export default function Pages() {
@@ -12,6 +14,8 @@ export default function Pages() {
       <div className="pb-32 pt-36">
         <div className="mx-auto max-w-screen-xl px-4 py-8 text-center lg:py-16">
           <ArticleTitle title="Rekomendasi Extensions Untuk Visual Studio Code Menurut Saya" />
+          <ArticleBy by="Kaloka Radia Nanda" />
+          <ArticleDate date="18/06/2024" />
           <ArticleText
             message="Hai teman-teman! Kalian suka coding? Atau mungkin baru mulai
             belajar? Kalau iya, kalian pasti tahu bahwa coding bisa jadi sangat
@@ -31,7 +35,7 @@ export default function Pages() {
             Yuk, kita mulai!"
           />
           <ul className="list-inside list-decimal">
-            <ArticleList list="Prettier" />
+            <ArticleList list="Prettier - Code Formatter" />
             <ArticleText message="Kalau kamu suka kode yang rapi dan terformat dengan baik, Prettier adalah extension yang wajib banget dipakai. Dengan sekali klik atau shortcut, Prettier akan otomatis merapikan kode kamu sesuai dengan aturan yang sudah ditentukan. Nggak ada lagi tuh kode yang berantakan atau nggak konsisten!" />
             <ArticleList list="Live Server" />
             <ArticleText

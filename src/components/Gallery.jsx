@@ -4,7 +4,11 @@
 function GalleryComponent({ name, url }) {
   return (
     <div className="mx-auto overflow-hidden rounded-lg border border-gray-200 bg-white p-4 shadow-lg hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
-      <img className="h-auto w-full object-cover" src={url} alt={name} />
+      <img
+        className="h-auto w-full rounded-lg object-cover"
+        src={url}
+        alt={name}
+      />
       <p className="mt-2 text-center text-sm text-gray-500 dark:text-gray-400">
         {name}
       </p>
