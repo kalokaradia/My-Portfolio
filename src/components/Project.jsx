@@ -44,6 +44,21 @@ function ProjectComponent({ img, title, url, message }) {
   );
 }
 
+function UpComingProjectComponent({ title, message }) {
+  return (
+    <div className="mx-auto max-w-sm rounded-lg border border-gray-300 bg-white shadow-lg dark:border-gray-700 dark:bg-gray-800">
+      <div className="p-5">
+        <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+          {title}
+        </h5>
+        <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+          {message}
+        </p>
+      </div>
+    </div>
+  );
+}
+
 export default function Project() {
   return (
     <section className="bg-white pb-32 pt-36 dark:bg-gray-900" id="project">
@@ -63,6 +78,15 @@ export default function Project() {
             img="/flamingoo-note.vercel.app.png"
             url="https://flamingoo-note.vercel.app/"
             message="Catatan sederhana yang saya buat dengan react dan vitejs sebagai bundler."
+          />
+        </div>
+        <h1 className="mb-4 mt-10 text-2xl font-extrabold leading-none tracking-tight text-gray-900 dark:text-white md:text-3xl lg:text-4xl">
+          Up Coming Project
+        </h1>
+        <div className="mt-10 grid grid-cols-1 space-y-5 lg:grid-cols-2 lg:space-y-0">
+          <UpComingProjectComponent
+            title="I Love Anime List"
+            message="Aplikasi list anime sederhana yang saya buat dengan react dan nextjs."
           />
         </div>
       </div>
