@@ -1,12 +1,17 @@
-/* eslint-disable @next/next/no-img-element */
-/* eslint-disable react/jsx-no-undef */
+import Image from "next/image";
 import Link from "next/link";
 
 function ProjectComponent({ img, title, url, message }) {
   return (
     <div className="mx-auto max-w-sm rounded-lg border border-gray-300 bg-white shadow-lg dark:border-gray-700 dark:bg-gray-800">
       <Link target="_blank" href={url}>
-        <img className="rounded-t-lg" src={img} alt={title} />
+        <Image
+          className="rounded-t-lg object-cover"
+          src={img}
+          alt={title}
+          width={400}
+          height={350}
+        />
       </Link>
       <div className="p-5">
         <Link target="_blank" href={url}>

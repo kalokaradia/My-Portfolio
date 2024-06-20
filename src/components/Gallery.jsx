@@ -1,13 +1,14 @@
-/* eslint-disable @next/next/no-img-element */
-/* eslint-disable react/jsx-no-undef */
-/* eslint-disable react/prop-types */
+import Image from "next/image";
+
 function GalleryComponent({ name, url }) {
   return (
     <div className="mx-auto overflow-hidden rounded-lg border border-gray-200 bg-white p-4 shadow-lg hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
-      <img
+      <Image
         className="h-auto w-full rounded-lg object-cover"
         src={url}
         alt={name}
+        width={5000}
+        height={5000}
       />
       <p className="mt-2 text-center text-sm text-gray-500 dark:text-gray-400">
         {name}

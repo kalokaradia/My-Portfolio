@@ -1,5 +1,4 @@
-/* eslint-disable @next/next/no-img-element */
-/* eslint-disable react/jsx-no-undef */
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Footer() {
@@ -9,7 +8,13 @@ export default function Footer() {
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
             <Link href="#" className="flex items-center">
-              <img src="/logo.ico" className="me-3 h-8" alt="Logo" />
+              <Image
+                src="/logo.ico"
+                className="me-3"
+                alt="Logo"
+                width={32}
+                height={32}
+              />
               <span className="self-center whitespace-nowrap text-2xl font-semibold dark:text-white">
                 K R N
               </span>

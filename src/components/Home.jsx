@@ -1,14 +1,17 @@
 /* eslint-disable @next/next/no-img-element */
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
   return (
     <section className="bg-white pt-20 dark:bg-gray-900" id="home">
       <div className="mx-auto max-w-screen-xl px-4 py-8 text-center lg:py-16">
-        <img
+        <Image
           src="/kaloka.jpg"
           alt="Kaloka Radia Nanda"
-          className="mx-auto mb-10 w-[250px] rounded-[100%] border-4 border-teal-500 shadow-lg dark:border-teal-700"
+          width={250}
+          height={250}
+          className="mx-auto mb-10 rounded-[100%] border-4 border-teal-500 shadow-lg dark:border-teal-700"
         />
         <h1 className="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 dark:text-white md:text-5xl lg:text-6xl">
           Hello, I&apos;am <span className="block">Kaloka Radia Nanda</span>

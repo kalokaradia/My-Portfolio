@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
@@ -42,7 +43,13 @@ export default function Navbar() {
           href="/"
           className="flex items-center space-x-3 rtl:space-x-reverse"
         >
-          <img src="/logo.ico" className="h-8" alt="Logo" />
+          <Image
+            src="/logo.ico"
+            className="h-8"
+            alt="Logo"
+            width={32}
+            height={32}
+          />
           <span className="self-center whitespace-nowrap text-2xl font-semibold dark:text-white">
             K R N
           </span>
@@ -77,11 +84,10 @@ export default function Navbar() {
           } w-full lg:block lg:w-auto`}
           id="navbar-solid-bg"
         >
-          <ul className="mt-4 flex flex-col rounded-lg bg-gray-50 font-comfortaa font-medium dark:border-gray-700 dark:bg-gray-800 lg:mt-0 lg:flex-row lg:space-x-8 lg:border-0 lg:bg-transparent lg:dark:bg-transparent rtl:space-x-reverse">
+          <ul className="font-comfortaa mt-4 flex flex-col rounded-lg bg-gray-50 font-medium dark:border-gray-700 dark:bg-gray-800 lg:mt-0 lg:flex-row lg:space-x-8 lg:border-0 lg:bg-transparent lg:dark:bg-transparent rtl:space-x-reverse">
             <NavigationMenu idNav="/#home" textNav="Home" />
             <NavigationMenu idNav="/#about" textNav="About" />
             <NavigationMenu idNav="/#project" textNav="Project" />
-            <NavigationMenu idNav="/#blog" textNav="Blog" />
             <NavigationMenu idNav="/#skill" textNav="Skill" />
             <NavigationMenu idNav="/#experience" textNav="Experience" />
             <NavigationMenu idNav="/#gallery" textNav="Gallery" />
