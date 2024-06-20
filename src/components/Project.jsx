@@ -66,7 +66,7 @@ export default function Project() {
         <h1 className="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 dark:text-white md:text-5xl lg:text-6xl">
           Project
         </h1>
-        <div className="mt-10 grid grid-cols-1 space-y-5 lg:grid-cols-2 lg:space-y-0">
+        <div className="mt-10 grid grid-cols-1 space-y-5 md:grid-cols-2 lg:grid-cols-3 lg:space-y-0">
           <ProjectComponent
             title="Tic Tac Toe With React"
             img="/ttt-with-react.vercel.app.png"
@@ -79,15 +79,18 @@ export default function Project() {
             url="https://flamingoo-note.vercel.app/"
             message="Catatan sederhana yang saya buat dengan react dan vitejs sebagai bundler."
           />
+          <ProjectComponent
+            title="I Love Anime List"
+            img="/iloveanimelist.vercel.app.png"
+            url="https://iloveanimelist.vercel.app/"
+            message="Aplikasi list anime sederhana yang saya buat dengan react dan nextjs."
+          />
         </div>
         <h1 className="mb-4 mt-10 text-2xl font-extrabold leading-none tracking-tight text-gray-900 dark:text-white md:text-3xl lg:text-4xl">
           Up Coming Project
         </h1>
         <div className="mt-10 grid grid-cols-1 space-y-5 lg:grid-cols-2 lg:space-y-0">
-          <UpComingProjectComponent
-            title="I Love Anime List"
-            message="Aplikasi list anime sederhana yang saya buat dengan react dan nextjs."
-          />
+          <UpComingProjectComponent title="Kosong" message="Kosong." />
         </div>
       </div>
     </section>
